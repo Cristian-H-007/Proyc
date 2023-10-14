@@ -1,0 +1,99 @@
+
+.rM{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/fondooo.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rF{
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input-userr input{
+    margin-top: 20%;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgb(39, 38, 38); 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #F4F1FF;
+}
+
+.input-email input{
+    margin-top: 5%;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgb(39, 38, 38); 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #F4F1FF;
+}
+
+.input-password input{
+    margin-top: 5%;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgb(39, 38, 38); 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #F4F1FF;
+}
+
+.reg {
+    width: 220px;
+    height: 50px;
+    background-color: rgb(226, 95, 19);
+    color: white;
+    border: rgb(82, 31, 31);
+    border-radius:30px ;
+    margin-top: 23px;
+    font-family: 'Bree Serif', serif;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 2px 6px 4px rgb(184, 76, 14);
+}
+
+.reg:hover{
+    background-color: rgb(247, 122, 51);
+    color:rgb(39, 38, 38)
+}
+
+@media (max-width: 840px) {
+    form {
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+}

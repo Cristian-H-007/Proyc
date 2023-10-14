@@ -1,0 +1,14 @@
+.dashMain{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/dashFondo.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashH1{
+    color: aliceblue;
+}
