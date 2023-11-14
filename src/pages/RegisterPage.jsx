@@ -6,16 +6,33 @@ export const RegisterPage = () => {
 
     const navigate = useNavigate();
 
-    const { name, email, password, onInputChange, onResetForm } =
+    const { username, email, password, onInputChange, onResetForm } =
         useForm({
-            name: '',
+            username: '',
             email: '',
             password: '',
         });
 
-    const onRegister = (e) => {
+    const onRegister = async (e) => {
         e.preventDefault()
 
+        console.log(username,email,password);
+
+        const form = JSON.stringify({
+            username,email,password
+        })
+
+        const res = await fetch('http://localhost:3000/register', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json', // Specify the content type of the request body
+                // You can add other headers if needed, such as authentication tokens
+              },
+
+            body: form
+        });
+
+        console.log(res);
 
         navigate ('/dashboard',{
             replace: true,
@@ -34,7 +51,7 @@ export const RegisterPage = () => {
                 <h1>Registrarse</h1>
 
                 <div className="input-userr">
-                    <input type="text" name='name' id='name' value={name} placeholder='User' onChange={onInputChange} required autoComplete='off' />
+                    <input type="text" name='username' id='username' value={username} placeholder='User' onChange={onInputChange} required autoComplete='off' />
                 </div>
 
                 <div className="input-email">

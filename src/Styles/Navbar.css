@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 5px;
+	background-color: #463621;
+
+}
+
+.logoPan img {
+
+    height: 45px;
+    border-radius: 100%;
+}

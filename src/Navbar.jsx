@@ -1,4 +1,7 @@
+
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
+import './Styles/Navbar.css'
+import logo from "./assets/logopan.png"
 // import logopan from './assets/logopan.svg';
 
 export const Navbar = () => {
@@ -20,7 +23,7 @@ export const Navbar = () => {
             <header>
             
                 <div className="logoPan">
-                    <Link to='/'> LOGO </Link>
+                <Link> <img src={logo} alt="" /></Link>
                 </div>
                 
 
